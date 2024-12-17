@@ -2,7 +2,6 @@ import numpy
 from scipy import stats
 import random
 
-
 gpa = []
 
 # load gpa values into gpa array
