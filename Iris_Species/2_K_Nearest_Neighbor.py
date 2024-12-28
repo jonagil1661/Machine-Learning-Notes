@@ -54,3 +54,15 @@ print("Test set predictions:\n {}".format(y_prediction))
 accuracy = np.mean(y_prediction == y_test)
 accuracy = knn.score(X_test, y_test)
 print("Test set score: {:.2f}\n".format(accuracy))
+
+"""
+Summary:
+
+X_train, X_test, y_train, y_test = train_test_split(iris_dataset['data'], iris_dataset['target'], random_state=0)
+
+knn = KNeighborsClassifier(n_neighbors = 1)
+
+knn.fit(X_train, y_train)
+
+print("Test set score: {:.2f}".format(knn.score(X_test, y_test)))
+"""

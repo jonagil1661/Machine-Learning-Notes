@@ -20,6 +20,7 @@ train_test_split() shuffles dataset first
 """
 
 # assign outputs
+# data is usually denoted w/ capital X; labels are denoted w/ lowercase y. 
 X_train, X_test, y_train, y_test = train_test_split(
     iris_dataset['data'], iris_dataset['target'], random_state=0)
 
@@ -54,5 +55,3 @@ match x:
         plt.show()
     case _:
         print("Okay boomer.")
-
-
